@@ -1,0 +1,153 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 20px 0px;
+}
+
+.title {
+  text-align: left;
+}
+
+.title h1 {
+  margin: 0 0 0 170px;
+}
+
+.titleForProjects {
+  margin-left: 460px !important;
+  padding-bottom: 15px;
+}
+
+.ionicProjectsContiner {
+  margin-left: 25%;
+}
+
+.angularProjectsContiner {
+  margin-left: 30%;
+}
+
+/* GymApp settings */
+
+.appVideoForGymApp {
+  height: 530px;
+  padding: 0;
+  margin-left: 110px;
+}
+
+.videoDescriptionForGymApp {
+  margin-left: 110px !important;
+  width: 300px;
+}
+
+.videoDescriptionForGymApp a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+/* KaloriAppVideo settings */
+
+.videoDescriptionForKaloriApp {
+  margin-left: 200px !important;
+  width: 250px;
+}
+
+.videoDescriptionForKaloriApp a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+
+}
+
+.appVideoForKaloriApp {
+  margin-left: 200px !important;
+  height: 530px;
+  padding: 0;
+}
+
+/* AngularApp settings */
+
+.angularAppVideo {
+  width: 321px;
+  height: 320px;
+}
+
+.videoDescriptionforAngularAppVideo {
+  text-align: left;
+  width: 300px;
+
+}
+
+.videoDescriptionforAngularAppVideo a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+
+}
+
+.videoDescription a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+
+}
+
+/* SquareDots settings */
+
+.squareDotsImg {
+  width: 321px;
+  height: 300px;
+  margin: 10px 0 0 100px;
+}
+
+.imgDescriptionforsquareDotsImg {
+  text-align: left;
+  margin: 10px 0px 0px 100px;
+  width: 250px;
+}
+
+.imgDescriptionforsquareDotsImg a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+
+}
+
+/* DataProjectsContainer */
+
+.dataProjectsContainer {
+  margin-left: 25%;
+  padding-top: 15px;
+}
+
+.powerBIImg {
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+  width: 500px;
+  height: 286px;
+}
+
+.videoDescriptionforpowerBI {
+  margin: 10px 0 0 0px;
+  width: 400px;
+
+}
+
+.tableauVideo {
+  text-align: left;
+  margin: 0px 0px 0px 150px;
+  width: 600px;
+  height: 286px;
+}
+
+.descriptionfortableauVideo {
+  margin: 10px 0 0 210px;
+  width: 400px;
+}
+
+.descriptionfortableauVideo a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+
+}

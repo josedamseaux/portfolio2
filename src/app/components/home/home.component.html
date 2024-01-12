@@ -1,0 +1,167 @@
+<div [appStyle]="colorHome" class="container">
+    <div class="title">
+        <div class="container">
+            <h1 class="titleForProjects">
+                Ionic + firebase apps
+                <br>
+            </h1>
+            <div class="container ionicProjectsContiner">
+                <div class="row">
+                    <div class="col-2">
+                        <video [muted]="true" muted class="appVideoForGymApp" autoplay loop>
+                            <source src="assets/images/yukaapp.mp4" type="video/mp4">
+                        </video>
+                        <div class="videoDescriptionForGymApp" [@languageChange]="language">
+                            @if(language === 'esp'){
+                            <h5>control de tus entrenamientos</h5>
+                            <a href="https://github.com/josedamseaux/IonicGymApp">repositorio en github</a>
+                            <br>
+                            <a href="assets/images/yukaapp.mp4" target="_blank">clickea para ver video</a>
+                            }
+
+                            @if(language === 'us'){
+                            <h5>track your workouts</h5>
+                            <a href="https://github.com/josedamseaux/IonicGymApp">github repo</a>
+                            <br>
+                            <a href="assets/images/yukaapp.mp4" target="_blank">click to view in detail</a>
+                            }
+
+                        </div>
+                    </div>
+                    <div class="col-2 ">
+                        <video [muted]="true" muted class="appVideoForKaloriApp" autoplay loop>
+                            <source src="assets/images/kalori-app-video.mp4" type="video/mp4">
+                        </video>
+                        <!-- Little fix due to special video width -->
+                        <div class="videoDescriptionForKaloriApp" [@languageChange]="language">
+                            @if(language === 'esp'){
+                            <h5>control de dieta y calorías</h5>
+                            <a href="https://github.com/josedamseaux/kalori-app">repositorio en github</a>
+                            <br>
+                            <a href="assets/images/kalori-app-video.mp4" target="_blank">clickea para ver video</a>
+                            }
+
+                            @if(language === 'us'){
+                            <h5>track your calories</h5>
+                            <a href="https://github.com/josedamseaux/kalori-app">github repo</a>
+                            <br>
+                            <a href="assets/images/kalori-app-video.mp4" target="_blank">click to view in detail</a>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="titleForProjects" [@languageChange]="language">
+                @if(language === 'esp'){
+                Proyectos en Angular
+                }
+                @if(language === 'us'){
+                Angular projects
+                }
+                <br>
+            </h1>
+
+            <div class="container angularProjectsContiner">
+                <div class="row">
+                    <div class="col-2">
+                        <video [muted]="true" muted class="angularAppVideo" autoplay loop>
+                            <source src="assets/images/angularnest.mp4" type="video/mp4">
+                        </video>
+                        <div class="videoDescriptionforAngularAppVideo" [@languageChange]="language">
+                            @if(language === 'esp'){
+                            <h5>ecommerce sencillo con angular + nestjs + postgres + stripe</h5>
+                            <a href="https://github.com/josedamseaux/nest-ecommerce">repositorio en github</a>
+                            <br>
+                            <a href="assets/images/angularnest.mp4" target="_blank">clickea para ver el video en
+                                detalle</a>
+                            }
+
+                            @if(language === 'us'){
+                            <h5>simple ecommerce built with angular + nestjs + postgres + stripe</h5>
+                            <a href="https://github.com/josedamseaux/nest-ecommerce">github repo</a>
+                            <br>
+                            <a href="assets/images/angularnest.mp4" target="_blank">click to view in detail</a>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="https://squaredotsbyjd.netlify.app/"> <img class="squareDotsImg"
+                                src="assets/images/pagina 3.png"></a>
+
+                        <div class="imgDescriptionforsquareDotsImg" [@languageChange]="language">
+                            @if(language === 'esp'){
+                            <h5>landing page</h5>
+                            <a href="https://github.com/josedamseaux/nest-ecommerce">repositorio en github</a>
+                            }
+
+                            @if(language === 'us'){
+                            <h5>slanding page</h5>
+                            <a href="https://github.com/josedamseaux/nest-ecommerce">github repo</a>
+                            <br>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="titleForProjects" [@languageChange]="language">
+                @if(language === 'esp'){
+                Dashboards en PowerBI/Tableau
+                }
+                @if(language === 'us'){
+                Some PowerBI/Tableau projects (I'm really enjoying data)
+                }
+                <br>
+            </h1>
+
+            <div class="container dataProjectsContainer">
+                <div class="row">
+                    <div class="col-2">
+                        <img class="powerBIImg" src="assets/images/powerbi.gif">
+                        <div class="videoDescriptionforpowerBI" [@languageChange]="language">
+                            @if(language === 'esp'){
+                            <h5>Un panel de control simple en PowerBI. El filtrado de ventas se realiza por país,
+                                clientes y margen de beneficio</h5>
+                            }
+                            @if(language === 'us'){
+                            <h5>Simple dashboard on PowerBI. Sales filtering by country, customers and profit margin
+                            </h5>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <video muted class="tableauVideo" autoplay loop>
+                            <source src="assets/images/tableau1.mp4" type="video/mp4">
+                        </video>
+                        <div class="descriptionfortableauVideo" [@languageChange]="language">
+                            @if(language === 'esp'){
+                            <h5>Un panel de control simple en Tableau. El filtrado de ventas se realiza por producto y
+                                por vendedor.</h5>
+                            <a
+                                href="https://public.tableau.com/shared/B8DZY6NYZ?:display_count=n&:origin=viz_share_link">Tableau
+                                link publico</a>
+                            }
+
+                            @if(language === 'us'){
+                            <h5>Simple dashboard on Tableau. Sales filtering is done by product and by salesperson </h5>
+                            <a  href="https://public.tableau.com/shared/B8DZY6NYZ?:display_count=n&:origin=viz_share_link">Tableau public link</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- <app-first-block></app-first-block>
+<app-second-block></app-second-block>    -->

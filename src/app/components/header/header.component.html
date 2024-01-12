@@ -1,0 +1,24 @@
+<div [appStyle]="colorHeader" class="container d-flex justify-content-between">
+    <div class="image pb-5">
+        <img class="profileImage" src="assets/images/author-image.jpg" alt="" />
+    </div>
+    <div [@languageChange]="language" class="title">
+
+        @if(language === 'esp'){
+        <h1>
+            Gracias por visitar mi portafolio.
+            <br>
+            Soy José Damseaux, entusiasta del desarrollo web.
+        </h1>
+        }
+
+        @if(language === 'us'){
+        <h1>
+            Thank you for stoping by my portfolio.
+            <br>
+            I'm José Damseaux, web developer enthusiast.
+        </h1>
+        }
+
+    </div>
+</div>

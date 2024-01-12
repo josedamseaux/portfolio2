@@ -1,0 +1,40 @@
+body {
+  margin: 0 !important;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+}
+
+.language {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  font-size: 50px;
+  margin-top: 10px;
+  margin-right: 20%;
+}
+.language:hover {
+  transform: scale(1.1);
+}
+
+.palette-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  margin: 15px;
+  font-size: 48px;
+  /* Ajusta el tamaño según tus necesidades */
+
+}
+
+.palette-icon:hover {
+  transform: scale(1.1);
+}
+
+.palette-icon:active {
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+}
