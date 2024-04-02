@@ -17,9 +17,9 @@
 .title {
     text-align: left; /* Ajusta el texto a la izquierda */
     width: 80%; /* Ajusta el ancho del título según tus preferencias */
-    margin-top: 40px;
+    margin-top: 20px;
   }
-  
+
   .title h1 {
     /* font-size: 16px; Ajusta el tamaño de fuente según tus preferencias */
     margin: 0 0 0 30px; /* Elimina el margen por defecto del h1 */

@@ -1,0 +1,23 @@
+.main {
+  /* margin: 0 0 0 25%; */
+  padding: 40px 0px 35px 0px;
+}
+
+.title {
+  margin: 0 0 0 20%;
+}
+
+.educationContent {
+  margin: 0 0 0 20%;
+  padding-bottom: 25px;
+}
+
+.languages{
+  padding-top: 20px;
+}
+
+.EfCertificate {
+  font-style: italic;
+  text-decoration: none;
+  color: black !important;
+}

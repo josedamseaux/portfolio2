@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { FirstBlockComponent } from '../first-block/first-block.component';
-import { SecondBlockComponent } from '../second-block/second-block.component';
 import { StyleDirective } from '../../directives/style.directive';
 import { StyleService } from '../../services/style.service';
 import { LanguageService } from '../../services/language.service';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { ContactComponent } from '../contact/contact.component';
+import { WorkExperienceComponent } from '../work-experience/work-experience.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FirstBlockComponent, SecondBlockComponent, StyleDirective],
+  imports: [ContactComponent, WorkExperienceComponent, StyleDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   animations: [
@@ -17,7 +17,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
       transition('* => *', [
         style({ opacity: 0 }),
         animate(800, style({ opacity: 1 }))
-      ]), 
+      ]),
     ])
   ]
 })

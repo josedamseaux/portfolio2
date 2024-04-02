@@ -1,0 +1,8 @@
+.main {
+    margin: 0 0 0 45%;
+    padding: 40px 0px 40px 0px;
+    width: 700px;
+}
+.ul {
+  list-style-type: circle; /* Cambia los puntos por círculos */
+}

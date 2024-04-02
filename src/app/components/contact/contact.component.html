@@ -1,0 +1,26 @@
+<div [appStyle]="colorContact">
+    <section class="contact">
+      <div [@languageChange]="language"  class="main">
+        @if(language === 'esp'){
+          <h2>Contacto.</h2>
+          <div class="line-dec"></div>
+          <span>Si quieres ponerte en contacto conmigo enviame un mail :)</span>
+          <br>
+         <p>josedamseaux&#64;gmail.com</p>
+          <br>
+          <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=josedamseaux@gmail.com&subject=MISSED%20CALL%20EZTRADER&body=Hello, José! %2C%0A%0A"
+            target="_blank" style="text-decoration:none;">
+            <button type="button" class="btn btn-light">CONTACTAME</button></a>
+          }
+          @if(language === 'us'){
+            <h2>Get in touch.</h2>
+            <div class="line-dec"></div>
+            <span>If you want to get in touch just send me an email :)</span>
+            <br>
+           <p>josedamseaux&#64;gmail.com</p>
+            <br>
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=josedamseaux@gmail.com&subject=MISSED%20CALL%20EZTRADER&body=Hello, José! %2C%0A%0A"
+              target="_blank" style="text-decoration:none;">
+              <button type="button" class="btn btn-light">CONTACT ME</button></a>
+            }
+        </div>

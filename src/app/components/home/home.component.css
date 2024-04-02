@@ -20,10 +20,12 @@
 
 .ionicProjectsContiner {
   margin-left: 25%;
+  width: 50%;
 }
 
 .angularProjectsContiner {
   margin-left: 30%;
+  width: 50%;
 }
 
 /* GymApp settings */
@@ -118,6 +120,7 @@
 .dataProjectsContainer {
   margin-left: 25%;
   padding-top: 15px;
+  width: 50%;
 }
 
 .powerBIImg {
@@ -149,5 +152,36 @@
   text-decoration: none;
   color: black;
   font-style: italic;
+}
 
+
+@media (max-width: 1024px) {
+  .ionicProjectsContiner{
+    width: 50%;
+  }
+
+  .angularProjectsContiner{
+    width: 50%;
+  }
+
+  /* Data Container */
+
+  .dataProjectsContainer{
+    width: 50%;
+  }
+
+  .tableauVideo{
+    margin-left: 0;
+  }
+
+
+}
+
+@media (max-width: 991px) {
+  /* Aquí puedes agregar estilos específicos para tablets */
+}
+
+/* Estilos para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 767px) {
+  /* Aquí puedes agregar estilos específicos para dispositivos móviles */
 }

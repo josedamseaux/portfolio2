@@ -1,6 +1,17 @@
 body {
   margin: 0 !important;
 }
+.icon-bar {
+  position: fixed;
+  /* top: 50%; */
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0; /* Agregar esta línea para posicionar a la derecha */
+  transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+  opacity: 0; /* Inicialmente transparente */
+
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -12,11 +23,11 @@ body {
 .language {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-
   font-size: 50px;
   margin-top: 10px;
   margin-right: 20%;
 }
+
 .language:hover {
   transform: scale(1.1);
 }
@@ -38,3 +49,46 @@ body {
   transform: scale(1.5);
   transition: transform 0.2s ease-in-out;
 }
+
+/* SideBar icons */
+
+
+.material-symbols-outlined-sidebar {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+}
+
+.language-sidebar {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-right: 20%;
+}
+
+.language-sidebar:hover {
+  transform: scale(1.1);
+}
+
+.palette-icon-sidebar {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  /* margin: 15px; */
+  font-size: 48px;
+  margin-right: 20%;
+
+  /* Ajusta el tamaño según tus necesidades */
+
+}
+
+.palette-icon-sidebar:hover {
+  transform: scale(1.1);
+}
+
+.palette-icon-sidebar:active {
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+}
+

@@ -1,21 +1,37 @@
 <div [appStyle]="colorA" class="pb-5 d-flex justify-content-end">
-    <span class="material-symbols-outlined palette-icon" (click)="changeColor()">
-        palette
-    </span>
+  <span class="material-symbols-outlined palette-icon" (click)="changeColor()">
+    palette
+  </span>
 
-    @if (languageClick) {
-    <span class="material-symbols-outlined language" (click)="changeLanguage('esp')">
-        language_us
-    </span>
-    } @else {
-    <span class="material-symbols-outlined language" (click)="changeLanguage('us')">
-        language_spanish
-    </span>
-    }
+
+  @if (languageClick) {
+  <span class="material-symbols-outlined language" (click)="changeLanguage('esp')">
+    language_us
+  </span>
+  } @else {
+  <span class="material-symbols-outlined language" (click)="changeLanguage('us')">
+    language_spanish
+  </span>
+  }
+</div>
+
+<div class="icon-bar" id="scrollNav">
+  <span class="material-symbols-outlined palette-icon-sidebar" (click)="changeColor()">
+    palette
+  </span>
+  @if (languageClick) {
+  <span class="material-symbols-outlined language-sidebar" (click)="changeLanguage('esp')">
+    language_us
+  </span>
+  } @else {
+  <span class="material-symbols-outlined language-sidebar" (click)="changeLanguage('us')">
+    language_spanish
+  </span>
+  }
 </div>
 
 <app-header></app-header>
 <app-home></app-home>
-<app-footer></app-footer>
-<app-second-block></app-second-block>
-<app-first-block></app-first-block>
+<app-education></app-education>
+<app-work-experience></app-work-experience>
+<app-contact></app-contact>
