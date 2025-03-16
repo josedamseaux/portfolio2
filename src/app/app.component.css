@@ -1,16 +1,21 @@
 body {
   margin: 0 !important;
 }
+
+.header{
+  padding: 1% 0 0 2%;
+}
+
+/* ICONOS PALETTE AND LANGUAGE */
+
 .icon-bar {
   position: fixed;
-  /* top: 50%; */
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 0; /* Agregar esta línea para posicionar a la derecha */
   transition: opacity 0.3s ease; /* Transición suave de la opacidad */
   opacity: 0; /* Inicialmente transparente */
-
+  margin: 25px;
 }
 
 .material-symbols-outlined {
@@ -20,7 +25,7 @@ body {
     'GRAD' 0,
 }
 
-.language {
+.language-icon {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   font-size: 50px;
@@ -28,7 +33,7 @@ body {
   margin-right: 20%;
 }
 
-.language:hover {
+.language-icon:hover {
   transform: scale(1.1);
 }
 
@@ -37,21 +42,14 @@ body {
   transition: transform 0.3s ease-in-out;
   margin: 15px;
   font-size: 48px;
-  /* Ajusta el tamaño según tus necesidades */
-
 }
 
 .palette-icon:hover {
   transform: scale(1.1);
 }
 
-.palette-icon:active {
-  transform: scale(1.5);
-  transition: transform 0.2s ease-in-out;
-}
 
 /* SideBar icons */
-
 
 .material-symbols-outlined-sidebar {
   font-variation-settings:
@@ -75,12 +73,8 @@ body {
 .palette-icon-sidebar {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  /* margin: 15px; */
   font-size: 48px;
   margin-right: 20%;
-
-  /* Ajusta el tamaño según tus necesidades */
-
 }
 
 .palette-icon-sidebar:hover {
@@ -92,3 +86,86 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+
+  .container {
+    height: 100px !important;
+  }
+
+  .main h1 {
+    font-size: 22px;
+  }
+
+  .profileImage {
+    position: absolute; /* Coloca la imagen fuera del flujo normal */
+    top: 10px; /* Fija la posición superior */
+    right: 10px; /* Fija la posición derecha */
+    width: 150px; /* Tamaño adecuado para tablets */
+    height: 150px; /* Mantiene la proporción circular */
+    border-radius: 50%; /* Asegura que la imagen sea redonda */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo */
+    margin: 0; /* Elimina márgenes adicionales */
+  }
+}
+
+@media (max-width: 768px) {
+  .profileImage {
+    position: absolute; /* Mantiene la posición absoluta */
+    top: 5px; /* Más cerca del borde superior en móviles */
+    right: 5px; /* Más cerca del borde derecho en móviles */
+    width: 120px; /* Tamaño reducido para móviles */
+    height: 120px; /* Mantiene la proporción circular */
+    border-radius: 50%; /* Asegura que la imagen sea redonda */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo */
+    margin: 0; /* Elimina márgenes adicionales */
+  }
+
+  .main {
+    text-align: center; /* Centra el texto */
+    padding: 0 5%; /* Reduce el padding en móviles */
+  }
+
+  .main h1 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 425px) {
+  .palette-icon, .language-icon{
+    font-size: 40px;
+  }
+
+  .palette-icon{
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .palette-icon, .language-icon{
+    font-size: 35px;
+  }
+
+  .palette-icon{
+    margin-right: 0px;
+  }
+
+
+}
+
+
+@media (max-width: 320px) {
+
+  .palette-icon, .language-icon{
+    font-size: 30px;
+  }
+
+  .palette-icon{
+    margin-right: 0px;
+  }
+
+}

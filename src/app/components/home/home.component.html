@@ -1,13 +1,16 @@
 <div [appStyle]="colorHome" class="container">
     <div class="title">
+
         <div class="container">
             <h1 class="titleForProjects">
                 Ionic + firebase apps
                 <br>
             </h1>
-            <div class="container ionicProjectsContiner">
-                <div class="row">
-                    <div class="col-2">
+
+
+            <!-- <div class="ionicProjectsContiner">
+                <div class="row ionicProjectsContinerRow">
+                    <div class="col-2 gymAppVideoContainer">
                         <video [muted]="true" muted class="appVideoForGymApp" autoplay loop>
                             <source src="assets/images/yukaapp.mp4" type="video/mp4">
                         </video>
@@ -28,11 +31,10 @@
 
                         </div>
                     </div>
-                    <div class="col-2 ">
+                    <div class="col-2 kaloriAppVideoContainer">
                         <video [muted]="true" muted class="appVideoForKaloriApp" autoplay loop>
                             <source src="assets/images/kalori-app-video.mp4" type="video/mp4">
                         </video>
-                        <!-- Little fix due to special video width -->
                         <div class="videoDescriptionForKaloriApp" [@languageChange]="language">
                             @if(language === 'esp'){
                             <h5>control de dieta y calorías</h5>
@@ -51,11 +53,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+
         </div>
 
-        <div class="container">
-
+        <!-- <div class="container">
             <h1 class="titleForProjects" [@languageChange]="language">
                 @if(language === 'esp'){
                 Proyectos en Angular
@@ -66,7 +69,7 @@
                 <br>
             </h1>
 
-            <div class="container angularProjectsContiner">
+            <div class="angularProjectsContiner">
                 <div class="row">
                     <div class="col-2">
                         <video [muted]="true" muted class="angularAppVideo" autoplay loop>
@@ -124,7 +127,7 @@
                 <br>
             </h1>
 
-            <div class="container dataProjectsContainer">
+            <div class="dataProjectsContainer">
                 <div class="row">
                     <div class="col-2">
                         <img class="powerBIImg" src="assets/images/powerbi.gif">
@@ -161,8 +164,8 @@
                     </div>
                 </div>
             </div>
-            
-        </div>
+
+        </div> -->
 
     </div>
 </div>

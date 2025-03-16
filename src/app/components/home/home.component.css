@@ -1,27 +1,25 @@
 .container {
-  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   padding: 20px 0 20px 0px;
 }
 
-.title {
-  text-align: left;
-}
-
-.title h1 {
-  margin: 0 0 0 170px;
-}
-
-.titleForProjects {
-  margin-left: 460px !important;
-  padding-bottom: 15px;
+.ionicProjectsContinerRow {
+  /* width: 100%; */
 }
 
 .ionicProjectsContiner {
-  margin-left: 25%;
-  width: 50%;
+  display: flex; /* Usamos flexbox */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
 }
+
+.titleForProjects {
+  display: flex; /* Usamos flexbox */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
 
 .angularProjectsContiner {
   margin-left: 30%;
@@ -156,23 +154,91 @@
 
 
 @media (max-width: 1024px) {
-  .ionicProjectsContiner{
+
+  .titleForProjects {
+    margin-left: 35% !important;
+    padding-bottom: 15px;
+  }
+
+  .gymAppVideoContainer {
+    margin-left: 15%;
+    margin-right: 30px;
+  }
+
+  .angularProjectsContiner {
     width: 50%;
   }
 
-  .angularProjectsContiner{
-    width: 50%;
+  /* AngularApp settings */
+
+  .angularAppVideo {
+    width: 321px;
+    height: 320px;
   }
 
-  /* Data Container */
+  .videoDescriptionforAngularAppVideo {
+    text-align: left;
+    width: 300px;
 
-  .dataProjectsContainer{
-    width: 50%;
   }
 
-  .tableauVideo{
-    margin-left: 0;
+  .videoDescriptionforAngularAppVideo a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+
   }
+
+  .videoDescription a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+
+  }
+
+  /* SquareDots settings */
+
+  .squareDotsImg {
+    width: 321px;
+    height: 300px;
+    margin: 10px 0 0 100px;
+  }
+
+  .imgDescriptionforsquareDotsImg {
+    text-align: left;
+    margin: 10px 0px 0px 100px;
+    width: 250px;
+  }
+
+  .imgDescriptionforsquareDotsImg a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+
+  }
+
+
+  /* DataProjectsContainer */
+
+  .dataProjectsContainer {
+    margin-left: 15%;
+  }
+
+  .powerBIImg {
+    width: 400px;
+    height: 200px;
+    /* margin-left: 15%; */
+  }
+
+  .tableauVideo {
+    width: 400px;
+    height: 200px;
+    margin-left: 300px;
+
+  }
+
+
+
 
 
 }

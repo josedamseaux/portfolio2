@@ -1,8 +1,10 @@
 <div [appStyle]="colorHeader" class="container d-flex justify-content-between">
+
     <div class="image pb-5">
         <img class="profileImage" src="assets/images/author-image.jpg" alt="" />
     </div>
-    <div [@languageChange]="language" class="title">
+
+    <div [@languageChange]="language" class="main">
 
         @if(language === 'esp'){
         <h1>
@@ -21,4 +23,5 @@
         }
 
     </div>
+
 </div>

@@ -1,8 +1,31 @@
 .main {
     margin: 0 0 0 45%;
     padding: 40px 0px 40px 0px;
-    width: 700px;
+    /* width: 700px; */
 }
 .ul {
   list-style-type: circle; /* Cambia los puntos por círculos */
+}
+
+@media (max-width: 1024px) {
+
+  .main{
+    /* margin: 0 0 0 30%; */
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .main{
+    /* margin: 0 0 0 30%;
+    width: 500px; */
+
+  }
+
+}
+
+/* Estilos para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 767px) {
+  /* Aquí puedes agregar estilos específicos para dispositivos móviles */
 }

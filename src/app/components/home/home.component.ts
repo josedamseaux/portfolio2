@@ -9,7 +9,7 @@ import { WorkExperienceComponent } from '../work-experience/work-experience.comp
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ContactComponent, WorkExperienceComponent, StyleDirective],
+  imports: [StyleDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   animations: [

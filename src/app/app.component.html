@@ -1,15 +1,16 @@
-<div [appStyle]="colorA" class="pb-5 d-flex justify-content-end">
+<div [appStyle]="colorA" class="header pb-5">
+
   <span class="material-symbols-outlined palette-icon" (click)="changeColor()">
     palette
   </span>
 
 
   @if (languageClick) {
-  <span class="material-symbols-outlined language" (click)="changeLanguage('esp')">
+  <span class="material-symbols-outlined language-icon" (click)="changeLanguage('esp')">
     language_us
   </span>
   } @else {
-  <span class="material-symbols-outlined language" (click)="changeLanguage('us')">
+  <span class="material-symbols-outlined language-icon" (click)="changeLanguage('us')">
     language_spanish
   </span>
   }
