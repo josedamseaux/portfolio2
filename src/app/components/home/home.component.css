@@ -1,71 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px 0 20px 0px;
 }
 
-.ionicProjectsContinerRow {
-  /* width: 100%; */
+.ionicProjectsContiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.ionicProjectsContiner {
-  display: flex; /* Usamos flexbox */
-  justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
+.gymAppVideoContainer, .kaloriAppVideoContainer {
+  width: 260px;
+  margin: 0 50px; /* Espaciado horizontal de 10px */
 }
+
+.appVideoForGymApp, .appVideoForKaloriApp {
+  height: 530px;
+  width: 260px;
+}
+
+.videoDescriptionForKaloriApp{
+  margin-left: 8px;
+}
+
+.videoDescriptionForGymApp a, .videoDescriptionForKaloriApp a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+/* AngularApp settings */
 
 .titleForProjects {
-  display: flex; /* Usamos flexbox */
-  justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .angularProjectsContiner {
   margin-left: 30%;
   width: 50%;
 }
-
-/* GymApp settings */
-
-.appVideoForGymApp {
-  height: 530px;
-  padding: 0;
-  margin-left: 110px;
-}
-
-.videoDescriptionForGymApp {
-  margin-left: 110px !important;
-  width: 300px;
-}
-
-.videoDescriptionForGymApp a {
-  text-decoration: none;
-  color: black;
-  font-style: italic;
-}
-
-/* KaloriAppVideo settings */
-
-.videoDescriptionForKaloriApp {
-  margin-left: 200px !important;
-  width: 250px;
-}
-
-.videoDescriptionForKaloriApp a {
-  text-decoration: none;
-  color: black;
-  font-style: italic;
-
-}
-
-.appVideoForKaloriApp {
-  margin-left: 200px !important;
-  height: 530px;
-  padding: 0;
-}
-
-/* AngularApp settings */
 
 .angularAppVideo {
   width: 321px;
@@ -75,14 +55,12 @@
 .videoDescriptionforAngularAppVideo {
   text-align: left;
   width: 300px;
-
 }
 
 .videoDescriptionforAngularAppVideo a {
   text-decoration: none;
   color: black;
   font-style: italic;
-
 }
 
 .videoDescription a {
@@ -155,99 +133,162 @@
 
 @media (max-width: 1024px) {
 
+  .gymAppVideoContainer, .kaloriAppVideoContainer {
+    width: 240px;
+  }
+
+  .kaloriAppVideoContainer{
+    margin-left: 30px !important;
+  }
+
+  .appVideoForGymApp, .appVideoForKaloriApp {
+    height: 490px !important;
+  }
+
+  .videoDescriptionForGymApp, .videoDescriptionForKaloriApp{
+    margin-left: 10px;
+  }
+
+  .videoDescriptionForKaloriApp{
+    margin-left: 15px;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .gymAppVideoContainer, .kaloriAppVideoContainer {
+    width: 240px;
+  }
+
+  .kaloriAppVideoContainer{
+    margin-left: 2px !important;
+  }
+
+  .appVideoForGymApp, .appVideoForKaloriApp {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 425px) {
+
   .titleForProjects {
-    margin-left: 35% !important;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 
-  .gymAppVideoContainer {
-    margin-left: 15%;
-    margin-right: 30px;
+  .gymAppVideoContainer, .kaloriAppVideoContainer {
+    width: 240px;
   }
 
-  .angularProjectsContiner {
-    width: 50%;
+  .appVideoForGymApp {
+    margin-left: 19%;
   }
 
-  /* AngularApp settings */
-
-  .angularAppVideo {
-    width: 321px;
-    height: 320px;
+  .appVideoForGymApp, .appVideoForKaloriApp {
+    height: 350px !important;
+    width: 170px;
   }
 
-  .videoDescriptionforAngularAppVideo {
-    text-align: left;
-    width: 300px;
-
+  .videoDescriptionForGymApp h5, .videoDescriptionForKaloriApp h5{
+    font-size: 15px;
+    margin: 0;
   }
 
-  .videoDescriptionforAngularAppVideo a {
-    text-decoration: none;
-    color: black;
-    font-style: italic;
+  .videoDescriptionForGymApp{
+    margin-left: 40px;
+    line-height: 1; /* Ajusta este valor según el espacio que desees */
 
   }
 
-  .videoDescription a {
-    text-decoration: none;
-    color: black;
-    font-style: italic;
-
+  .videoDescriptionForKaloriApp{
+    margin-left: 8px;
+    line-height: 1; /* Ajusta este valor según el espacio que desees */
   }
 
-  /* SquareDots settings */
-
-  .squareDotsImg {
-    width: 321px;
-    height: 300px;
-    margin: 10px 0 0 100px;
+  .videoDescriptionForGymApp a, .videoDescriptionForKaloriApp a {
+    font-size: 10px;
   }
 
-  .imgDescriptionforsquareDotsImg {
-    text-align: left;
-    margin: 10px 0px 0px 100px;
-    width: 250px;
+}
+
+@media (max-width: 375px) {
+
+   .titleForProjects {
+    margin-bottom: 15px;
   }
 
-  .imgDescriptionforsquareDotsImg a {
-    text-decoration: none;
-    color: black;
-    font-style: italic;
-
+  .gymAppVideoContainer{
+    width: 100%;
+    margin-left: 5px;
   }
 
-
-  /* DataProjectsContainer */
-
-  .dataProjectsContainer {
-    margin-left: 15%;
+  .kaloriAppVideoContainer{
+    width: 98%;
   }
 
-  .powerBIImg {
-    width: 400px;
-    height: 200px;
-    /* margin-left: 15%; */
-  }
-
-  .tableauVideo {
-    width: 400px;
-    height: 200px;
-    margin-left: 300px;
-
+  .appVideoForGymApp {
+    margin-left: 15px;
   }
 
 
+  .videoDescriptionForGymApp{
+    margin-left: -8px;
+    line-height: 1;
+  }
+
+  .videoDescriptionForGymApp h5, .videoDescriptionForKaloriApp h5{
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .videoDescriptionForGymApp{
+    margin-left: 15px !important;
+  }
+
+  .videoDescriptionForGymApp, .videoDescriptionForKaloriApp{
+    font-size: 8px;
+    margin-left: 7px;
+    line-height: 1;
+  }
 
 
 
 }
 
-@media (max-width: 991px) {
-  /* Aquí puedes agregar estilos específicos para tablets */
-}
+@media (max-width: 320px) {
 
-/* Estilos para pantallas pequeñas (dispositivos móviles) */
-@media (max-width: 767px) {
-  /* Aquí puedes agregar estilos específicos para dispositivos móviles */
+  .titleForProjects {
+    margin-bottom: 10px;
+  }
+
+  .appVideoForKaloriApp {
+    width: 90%;
+    height: 90% !important;
+    margin-left: 3px;
+  }
+
+  .appVideoForGymApp {
+    width: 93%;
+    height: 90% !important;
+    margin-left: 8px;
+  }
+
+  .videoDescriptionForGymApp h5, .videoDescriptionForKaloriApp h5{
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .videoDescriptionForGymApp{
+    margin-left: 9px !important;
+  }
+
+  .videoDescriptionForGymApp, .videoDescriptionForKaloriApp{
+    font-size: 4px;
+    margin-left: 7px;
+    line-height: 1;
+  }
+
 }

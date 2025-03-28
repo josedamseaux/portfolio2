@@ -2,28 +2,51 @@ body {
   margin: 0 !important;
 }
 
-.header{
-  padding: 1% 0 0 2%;
+.header {
+  padding: 1% 0 5px 2%; /* Espaciado interno */
+  display: flex; /* Activa Flexbox */
+  justify-content: space-between; /* Distribuye los elementos a los extremos */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.icon-bar {
+  position: fixed; /* Posiciona el contenedor fijo respecto a la ventana */
+  transform: translateY(-50%); /* Ajusta para centrar correctamente */
+  transition: opacity 0.3s ease; /* Transición para la opacidad */
+  opacity: 0; /* Asegúrate de que sea visible */
+  padding: 1% 0 5px 2%; /* Espaciado interno */
+  margin-top: -35px;
+  display: flex; /* Activa Flexbox */
+  justify-content: space-between; /* Distribuye los elementos a los extremos */
+  width: 100%; /* Define un ancho que permita la distribución */
 }
 
 /* ICONOS PALETTE AND LANGUAGE */
 
-.icon-bar {
-  position: fixed;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  transition: opacity 0.3s ease; /* Transición suave de la opacidad */
-  opacity: 0; /* Inicialmente transparente */
-  margin: 25px;
+.left-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
+.right-icons{
+  font-size: 35px;
+  margin-right: 1.5%;
 }
+
+.right-icons > a {
+  margin-right: 10px;
+  cursor: pointer;
+  color: black;
+  transition: color 0.3s; /* Transición suave al pasar el cursor */
+  float: right; /* Coloca los elementos hacia la derecha */
+}
+
+.right-icons a {
+  transition: color 0.3s; /* Transición suave al pasar el cursor */
+  float: right; /* Coloca los elementos hacia la derecha */
+}
+
 
 .language-icon {
   cursor: pointer;
@@ -40,7 +63,6 @@ body {
 .palette-icon {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  margin: 15px;
   font-size: 48px;
 }
 
@@ -49,20 +71,12 @@ body {
 }
 
 
-/* SideBar icons */
-
-.material-symbols-outlined-sidebar {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-}
+/* DROPDOWN icons */
 
 .language-sidebar {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   font-size: 50px;
-  margin-top: 10px;
   margin-right: 20%;
 }
 
@@ -74,7 +88,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   font-size: 48px;
-  margin-right: 20%;
+  margin-right: 1%;
 }
 
 .palette-icon-sidebar:hover {
@@ -86,86 +100,120 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-/* Tablets y pantallas medianas */
+
+/* RESPONSIVE */
 @media (max-width: 1024px) {
-
-  .container {
-    height: 100px !important;
-  }
-
-  .main h1 {
-    font-size: 22px;
-  }
-
-  .profileImage {
-    position: absolute; /* Coloca la imagen fuera del flujo normal */
-    top: 10px; /* Fija la posición superior */
-    right: 10px; /* Fija la posición derecha */
-    width: 150px; /* Tamaño adecuado para tablets */
-    height: 150px; /* Mantiene la proporción circular */
-    border-radius: 50%; /* Asegura que la imagen sea redonda */
-    object-fit: cover; /* Ajusta la imagen dentro del círculo */
-    margin: 0; /* Elimina márgenes adicionales */
-  }
 }
 
 @media (max-width: 768px) {
-  .profileImage {
-    position: absolute; /* Mantiene la posición absoluta */
-    top: 5px; /* Más cerca del borde superior en móviles */
-    right: 5px; /* Más cerca del borde derecho en móviles */
-    width: 120px; /* Tamaño reducido para móviles */
-    height: 120px; /* Mantiene la proporción circular */
-    border-radius: 50%; /* Asegura que la imagen sea redonda */
-    object-fit: cover; /* Ajusta la imagen dentro del círculo */
-    margin: 0; /* Elimina márgenes adicionales */
-  }
 
-  .main {
-    text-align: center; /* Centra el texto */
-    padding: 0 5%; /* Reduce el padding en móviles */
-  }
-
-  .main h1 {
-    font-size: 20px;
-    margin: 5px 0;
-  }
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 425px) {
-  .palette-icon, .language-icon{
+  .language-icon, .palette-icon{
     font-size: 40px;
   }
 
-  .palette-icon{
-    margin-right: 0px;
+  .right-icons{
+    font-size: 25px;
   }
+
+  .right-icons{
+    margin-right: 0px !important;
+  }
+
+  .language-sidebar, .palette-icon-sidebar {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .palette-icon-sidebar{
+    padding-left: 15px;
+  }
+
+  .icon-bar {
+    position: fixed; /* Posiciona el contenedor fijo respecto a la ventana */
+    transform: translateY(-50%); /* Ajusta para centrar correctamente */
+    transition: opacity 0.3s ease; /* Transición para la opacidad */
+    opacity: 0; /* Asegúrate de que sea visible */
+    margin-top: 2%; /* Resetea márgenes innecesarios */
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    width: 16%; /* Ajusta el ancho al contenido */
+    margin-left: -19px;
+  }
+
+  .palette-icon-sidebar{
+    padding-left: 19px;
+  }
+
+  .fa-linkedin-sidebar{
+    margin: 45px 0 0 10px !important;
+    position: absolute;
+  }
+
 }
 
 @media (max-width: 375px) {
 
-  .palette-icon, .language-icon{
+  .language-icon, .palette-icon {
     font-size: 35px;
   }
 
-  .palette-icon{
-    margin-right: 0px;
+  .language-sidebar, .palette-icon-sidebar {
+    font-size: 35px;
   }
 
+  .right-icons{
+    font-size: 25px;
+  }
+
+  .palette-icon {
+    margin-left: 4px;
+  }
+
+  .palette-icon-sidebar{
+    padding-left: 13px;
+  }
+
+  .icon-bar {
+    width: 16%; /* Ajusta el ancho al contenido */
+    margin-left: -8px;
+    margin-top: 4%; /* Resetea márgenes innecesarios */
+  }
+
+  .fa-linkedin-sidebar{
+    margin: 40px 0 0 10px !important;
+  }
 
 }
 
-
 @media (max-width: 320px) {
 
-  .palette-icon, .language-icon{
+  .language-icon, .palette-icon {
     font-size: 30px;
   }
 
-  .palette-icon{
-    margin-right: 0px;
+  .language-sidebar, .palette-icon-sidebar {
+    font-size: 30px;
+  }
+
+  .palette-icon-sidebar{
+    padding-left: 10px;
+  }
+
+  .right-icons{
+    font-size: 20px;
+  }
+
+  .icon-bar {
+    margin-left: -8px;
+    margin-top: 2%; /* Resetea márgenes innecesarios */
+  }
+
+  .fa-linkedin-sidebar{
+    margin: 35px 0 0 10px !important;
   }
 
 }

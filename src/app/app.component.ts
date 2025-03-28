@@ -35,7 +35,7 @@ export class AppComponent implements OnInit{
 
     window.addEventListener('scroll', () => {
       const scrollNav = document.getElementById('scrollNav');
-      if (window.scrollY > 80) { // Cambia este valor según la cantidad de scroll que desees
+      if (window.scrollY > 63) { // Cambia este valor según la cantidad de scroll que desees
           scrollNav!.style.opacity = '1'; // Hacer el elemento visible
       } else {
           scrollNav!.style.opacity = '0'; // Ocultar el elemento

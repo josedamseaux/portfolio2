@@ -2,109 +2,126 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  height: 180px;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profileImage {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%; /* Imagen redonda */
-  object-fit: cover; /* Ajusta la imagen para cubrir completamente el círculo */
-  margin-left: 17%;
-  position: absolute; /* Elimina la influencia en el flujo del documento */
+  position: absolute;
   top: 10%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
 }
 
 .main {
-  text-align: center; /* Centra el texto en dispositivos pequeños */
-  width: 100%; /* Ajusta el ancho automáticamente */
-  padding-left: 5%; /* Añade padding lateral para dispositivos pequeños */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .main h1 {
-  font-size: 40px; /* Tamaño de fuente ajustado para pantallas pequeñas */
+  font-size: 40px;
+  margin-top: 4%;
 }
 
 /* Tablets y pantallas medianas */
+
+@media (max-width: 1440px) {
+
+  .container {
+    height: 250px;
+  }
+
+  .profileImage {
+    width: 130px;
+    height: 130px;
+    top: 10%;
+  }
+
+}
+
 @media (max-width: 1024px) {
 
   .container {
-    height: 100px !important;
+    height: 190px;
+  }
+
+  .profileImage {
+    width: 130px;
+    height: 130px;
+  }
+
+  .main h1 {
+    margin-top: 6%;
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    height: 170px;
   }
 
   .main h1 {
     font-size: 22px;
+    margin-top: 9%;
   }
 
   .profileImage {
-    position: absolute; /* Coloca la imagen fuera del flujo normal */
-    top: 10px; /* Fija la posición superior */
-    right: 10px; /* Fija la posición derecha */
-    width: 150px; /* Tamaño adecuado para tablets */
-    height: 150px; /* Mantiene la proporción circular */
-    border-radius: 50%; /* Asegura que la imagen sea redonda */
-    object-fit: cover; /* Ajusta la imagen dentro del círculo */
-    margin: 0; /* Elimina márgenes adicionales */
-  }
-}
-
-@media (max-width: 768px) {
-  .profileImage {
-    position: absolute; /* Mantiene la posición absoluta */
-    top: 5px; /* Más cerca del borde superior en móviles */
-    right: 5px; /* Más cerca del borde derecho en móviles */
-    width: 120px; /* Tamaño reducido para móviles */
-    height: 120px; /* Mantiene la proporción circular */
-    border-radius: 50%; /* Asegura que la imagen sea redonda */
-    object-fit: cover; /* Ajusta la imagen dentro del círculo */
-    margin: 02%; /* Elimina márgenes adicionales */
+    top: 9%;
+    width: 120px;
+    height: 120px;
   }
 
-  .main {
-    text-align: center; /* Centra el texto */
-    padding: 0 5%; /* Reduce el padding en móviles */
-  }
-
-  .main h1 {
-    font-size: 20px;
-    margin: 5px 0;
-  }
 }
 
 @media (max-width: 425px) {
+
+  .container {
+    height: 165px;
+  }
+
   .profileImage {
-    position: absolute; /* Mantiene la posición absoluta */
-    top: 5px; /* Más cerca del borde superior en móviles */
-    right: 5px; /* Más cerca del borde derecho en móviles */
-    width: 100px; /* Tamaño reducido para móviles */
-    height: 100px; /* Mantiene la proporción circular */
-    border-radius: 50%; /* Asegura que la imagen sea redonda */
-    object-fit: cover; /* Ajusta la imagen dentro del círculo */
-    margin: 0; /* Elimina márgenes adicionales */
+    top: 7.5%;
+    width: 100px;
+    height: 100px;
   }
 
   .main h1 {
     font-size: 19px;
+    margin-top: 13%;
   }
 }
 
 @media (max-width: 375px) {
 
-  .container {
-    height: 80px !important;
-  }
-
-  .main h1 {
-    font-size: 17px;
+  .container{
+    height: 150px;
   }
 
   .profileImage {
-    position: absolute; /* Elimina la influencia en el flujo del documento */
-    top:0;
-    right:0;
-    width: 28%;
-    height: 14%;
-    margin: 2% 5% 0 0;
+    top: 7%;
+    width: 90px;
+    height: 90px;
+  }
+
+  .main h1 {
+    font-size: 18px;
+    margin-top: 12%;
   }
 
 }
@@ -112,16 +129,19 @@
 
 @media (max-width: 320px) {
 
-  .main h1 {
-    font-size: 15px;
+  .container{
+    height: 130px;
   }
 
   .profileImage {
-    position: absolute; /* Elimina la influencia en el flujo del documento */
-    top:0;
-    right:0;
-    width: 29%;
-    height: 12%;
-    margin: 2% 5% 0 0;
+    top: 6%;
+    width: 80px;
+    height: 80px;
   }
+
+  .main h1 {
+    font-size: 15px;
+    margin-top: 12%;
+  }
+
 }
