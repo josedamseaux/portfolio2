@@ -7,30 +7,26 @@
 }
 
 .titleForProjects {
+  display: flex;
+  justify-content: center;
   padding-top: 20px;
   margin-bottom: 40px;
 }
 
-.ionicProjectsContiner {
+.ionicProjectsContiner, .angularProjectsContiner {
   display: flex;
-  /* Habilita Flexbox */
-  flex-direction: row;
-  /* Coloca los elementos en fila */
   justify-content: center;
-  /* Centra horizontalmente los elementos */
   gap: 20px;
 }
 
-.gymAppVideoContainer,
-.kaloriAppVideoContainer {
+.angularProjectsContiner{
+  gap: 0px;
+}
+
+.gymAppVideoContainer, .kaloriAppVideoContainer, .angularProjectsContiner {
   display: flex;
-  /* Habilita Flexbox */
   flex-direction: column;
-  /* Elementos internos en columna */
   align-items: center;
-  /* Centra horizontalmente el contenido */
-  text-align: center;
-  /* Centra el texto */
 }
 
 .gymAppVideoContainer {
@@ -52,69 +48,37 @@
   margin-top: 22px;
 }
 
-.videoDescriptionForGymApp a,
-.videoDescriptionForKaloriApp a {
+.videoDescriptionForGymApp a, .videoDescriptionForKaloriApp a {
   text-decoration: none;
   color: black;
   font-style: italic;
 }
 
-
 /* AngularApp settings */
 
-.titleForProjects {
-  display: flex;
-  justify-content: center;
-}
-
-.angularProjectsContiner {
-  margin-left: 30%;
-  width: 50%;
-}
-
-.angularAppVideo {
+.angularAppVideo video {
   width: 321px;
   height: 320px;
 }
 
-.videoDescriptionforAngularAppVideo {
-  text-align: left;
-  width: 300px;
+.videoDescriptionforAngularAppVideo, .imgDescriptionforsquareDotsImg {
+  margin-top: 10px;
+  text-align: center;
 }
 
-.videoDescriptionforAngularAppVideo a {
+.videoDescriptionforAngularAppVideo a, .imgDescriptionforsquareDotsImg a {
   text-decoration: none;
   color: black;
   font-style: italic;
 }
 
-.videoDescription a {
-  text-decoration: none;
-  color: black;
-  font-style: italic;
-}
 
 /* SquareDots settings */
 
 .squareDotsImg {
   width: 321px;
   height: 300px;
-  margin: 10px 0 0 100px;
 }
-
-.imgDescriptionforsquareDotsImg {
-  text-align: left;
-  margin: 10px 0px 0px 100px;
-  width: 250px;
-}
-
-.imgDescriptionforsquareDotsImg a {
-  text-decoration: none;
-  color: black;
-  font-style: italic;
-
-}
-
 
 @media (max-width: 1024px) {
   .titleForProjects {
@@ -143,6 +107,11 @@
     font-size: 12px;
   }
 
+  .angularAppVideo{
+    width: 100% ;
+    height: 100% ;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -165,6 +134,24 @@
   .videoDescriptionForGymApp h5 {
     font-size: 14px;
     margin: 0;
+  }
+
+  .videoDescriptionforAngularAppVideo h5, .imgDescriptionforsquareDotsImg h5{
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .videoDescriptionforAngularAppVideo, .imgDescriptionforsquareDotsImg {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .videoDescriptionforAngularAppVideo a, .imgDescriptionforsquareDotsImg a {
+    font-size: 10px;
+  }
+
+  .squareDotsImg{
+    padding-top: 10px;
   }
 
 }

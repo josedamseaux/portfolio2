@@ -4,33 +4,21 @@ body {
 
 .header {
   padding: 1% 0 5px 2%;
-  /* Espaciado interno */
   display: flex;
-  /* Activa Flexbox */
   justify-content: space-between;
-  /* Distribuye los elementos a los extremos */
   align-items: center;
-  /* Centra los elementos verticalmente */
 }
 
 .icon-bar {
   position: fixed;
-  /* Posiciona el contenedor fijo respecto a la ventana */
   transform: translateY(-50%);
-  /* Ajusta para centrar correctamente */
   transition: opacity 0.3s ease;
-  /* Transición para la opacidad */
   opacity: 0;
-  /* Asegúrate de que sea visible */
   padding: 1% 0 5px 2%;
-  /* Espaciado interno */
   margin-top: -35px;
   display: flex;
-  /* Activa Flexbox */
   justify-content: space-between;
-  /* Distribuye los elementos a los extremos */
   width: 100%;
-  /* Define un ancho que permita la distribución */
 }
 
 /* ICONOS PALETTE AND LANGUAGE */
@@ -68,8 +56,8 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   font-size: 50px;
-  margin-top: 10px;
-  margin-right: 20%;
+  /* margin-top: 10px;
+  margin-right: 20%; */
 }
 
 .language-icon:hover {
@@ -93,7 +81,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   font-size: 50px;
-  margin-right: 20%;
+  /* margin-right: 20%; */
 }
 
 .language-sidebar:hover {
@@ -145,8 +133,25 @@ body {
 @media (max-width: 425px) {
 
   .header{
-    padding-left: 13px;
+    /* padding-left: 13px; */
   }
+
+  .language-icon{
+    position: absolute;
+    left: 45px;
+  }
+
+  .palette-icon{
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out !important;
+  }
+
+  .palette-icon-sidebar {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
 
   .icon-bar {
     position: fixed;

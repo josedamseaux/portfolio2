@@ -32,15 +32,16 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
     this.changeColor()
-
     window.addEventListener('scroll', () => {
       const scrollNav = document.getElementById('scrollNav');
-      if (window.scrollY > 63) { // Cambia este valor según la cantidad de scroll que desees
-          scrollNav!.style.opacity = '1'; // Hacer el elemento visible
+      if (window.scrollY > 63) { // Cambia este valor según el scroll deseado
+          scrollNav!.style.visibility = 'visible'; // Mostrar el elemento
+          scrollNav!.style.opacity = '1'; // Aplicar transición suave
       } else {
-          scrollNav!.style.opacity = '0'; // Ocultar el elemento
+          scrollNav!.style.visibility = 'hidden'; // Ocultar el elemento
+          scrollNav!.style.opacity = '0'; // Aplicar transición suave
       }
-  });
+    });
 
   }
 
