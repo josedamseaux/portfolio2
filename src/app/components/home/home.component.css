@@ -1,52 +1,64 @@
-* {
-  box-sizing: border-box;
-}
+/* * {
+  outline: 1px solid red;
+} */
 
 .container {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 15px 0 20px 0px;
+}
+
+.titleForProjects {
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 .ionicProjectsContiner {
   display: flex;
-  justify-content: space-around;
+  /* Habilita Flexbox */
+  flex-direction: row;
+  /* Coloca los elementos en fila */
+  justify-content: center;
+  /* Centra horizontalmente los elementos */
+  gap: 20px;
 }
 
-.titleForProjects {
-  margin-bottom: 40px;
+.gymAppVideoContainer,
+.kaloriAppVideoContainer {
+  display: flex;
+  /* Habilita Flexbox */
+  flex-direction: column;
+  /* Elementos internos en columna */
+  align-items: center;
+  /* Centra horizontalmente el contenido */
+  text-align: center;
+  /* Centra el texto */
 }
 
 .gymAppVideoContainer {
-  width: 260px;
-  margin-left: 14%;
+  margin-left: -2% !important;
 }
 
-.kaloriAppVideoContainer {
-  width: 260px;
-  margin-right: 25%;
+.appVideoForKaloriApp {
+  height: 100% !important;
+  width: 100% !important;
 }
 
 .videoDescriptionForGymApp {
   text-align: center;
   margin-top: 20px;
-  margin-left: 90px !important;
-  width: 100%;
 }
 
 .videoDescriptionForKaloriApp {
   text-align: center;
   margin-top: 22px;
-  margin-left: 60px !important;
-  width: 100%;
-
 }
 
-.videoDescriptionForGymApp a, .videoDescriptionForKaloriApp a {
+.videoDescriptionForGymApp a,
+.videoDescriptionForKaloriApp a {
   text-decoration: none;
   color: black;
   font-style: italic;
 }
+
 
 /* AngularApp settings */
 
@@ -103,96 +115,32 @@
 
 }
 
-/* DataProjectsContainer */
-
-.dataProjectsContainer {
-  margin-left: 25%;
-  padding-top: 15px;
-  width: 50%;
-}
-
-.powerBIImg {
-  text-align: left;
-  margin: 0px 0px 0px 0px;
-  width: 500px;
-  height: 286px;
-}
-
-.videoDescriptionforpowerBI {
-  margin: 10px 0 0 0px;
-  width: 400px;
-
-}
-
-.tableauVideo {
-  text-align: left;
-  margin: 0px 0px 0px 150px;
-  width: 600px;
-  height: 286px;
-}
-
-.descriptionfortableauVideo {
-  margin: 10px 0 0 210px;
-  width: 400px;
-}
-
-.descriptionfortableauVideo a {
-  text-decoration: none;
-  color: black;
-  font-style: italic;
-}
-
 
 @media (max-width: 1024px) {
-
-  .gymAppVideoContainer, .kaloriAppVideoContainer {
-    width: 240px;
+  .titleForProjects {
+    margin-bottom: 3%;
   }
 
-  .gymAppVideoContainer {
-    margin-left: 26%;
+  .appVideoForGymApp,
+  .appVideoForKaloriApp {
+    height: 600px !important;
   }
 
-  .kaloriAppVideoContainer {
-    margin-right: 25%;
+  .videoDescriptionForGymApp,
+  .videoDescriptionForKaloriApp {
+    margin: 10px 0px 0px 0px !important;
   }
-
-
-  .kaloriAppVideoContainer {
-    margin-left: 30px !important;
-  }
-
-  .appVideoForGymApp, .appVideoForKaloriApp {
-    height: 490px !important;
-  }
-
-  .videoDescriptionForGymApp, .videoDescriptionForKaloriApp {
-    margin: 0px 0px 0px 0px !important;
-    /* Espaciado adicional */
-  }
-
-  .videoDescriptionForKaloriApp {}
-
 
 }
 
 @media (max-width: 768px) {
-
-  .gymAppVideoContainer,
-  .kaloriAppVideoContainer {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .titleForProjects {
+    margin-bottom: 3%;
   }
 
-  .gymAppVideoContainer{
-    margin-left: 18% ;
-  }
-
-  .videoDescriptionForKaloriApp, .videoDescriptionForGymApp{
-    font-size: 14px;
+  .videoDescriptionForKaloriApp,
+  .videoDescriptionForGymApp {
+    font-size: 12px;
   }
 
 }
@@ -200,77 +148,52 @@
 @media (max-width: 425px) {
 
   .titleForProjects {
-    margin-bottom: 15px;
+    padding-top: 10px;
   }
 
-  .gymAppVideoContainer, .kaloriAppVideoContainer {
-    width: 90%;
-    margin: 0px ;
-  }
-
-  .gymAppVideoContainer {
-    margin-left: 30px ;
-  }
-
-  .kaloriAppVideoContainer {
-    margin-right: 20px ;
-  }
-
-  .appVideoForGymApp, .appVideoForKaloriApp {
+  .appVideoForGymApp,
+  .appVideoForKaloriApp {
     height: 350px !important;
   }
 
-  .videoDescriptionForKaloriApp , .videoDescriptionForGymApp{
-    font-size: 10px;
+  .videoDescriptionForKaloriApp,
+  .videoDescriptionForGymApp {
+    font-size: 11px;
   }
 
-  .videoDescriptionForKaloriApp h5, .videoDescriptionForGymApp h5{
-    font-size: 14px !important;
-    margin-bottom: 0px !important;
-    margin-top: 5px;
+  .videoDescriptionForKaloriApp h5,
+  .videoDescriptionForGymApp h5 {
+    font-size: 14px;
+    margin: 0;
   }
 
 }
 
 @media (max-width: 375px) {
+
   .titleForProjects {
-    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 22px;
   }
 
-  .gymAppVideoContainer, .kaloriAppVideoContainer {
-    width: 90%;
-    margin: 0px !important;
-  }
-
-  .gymAppVideoContainer {
-    margin-left: 17px !important;
-  }
-
+  .gymAppVideoContainer,
   .kaloriAppVideoContainer {
-    margin-right: 15px !important;
+    margin: 0px !important;
   }
 
 }
 
 @media (max-width: 320px) {
 
-  .titleForProjects {
-    margin-bottom: 0px;
-  }
-
-  .gymAppVideoContainer, .kaloriAppVideoContainer {
+  .appVideoForGymApp,
+  .appVideoForKaloriApp {
     width: 100%;
-    margin: 10px 0;
+    height: 280px !important;
   }
 
-  .appVideoForGymApp, .appVideoForKaloriApp {
-    width: 100%;
-    height: 80% !important;
-  }
-
-  .videoDescriptionForGymApp h5, .videoDescriptionForKaloriApp h5 {
+  .videoDescriptionForGymApp h5,
+  .videoDescriptionForKaloriApp h5 {
     font-size: 12px;
-    margin-left: -1px !important;
   }
 
 

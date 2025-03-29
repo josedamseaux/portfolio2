@@ -3,48 +3,64 @@ body {
 }
 
 .header {
-  padding: 1% 0 5px 2%; /* Espaciado interno */
-  display: flex; /* Activa Flexbox */
-  justify-content: space-between; /* Distribuye los elementos a los extremos */
-  align-items: center; /* Centra los elementos verticalmente */
+  padding: 1% 0 5px 2%;
+  /* Espaciado interno */
+  display: flex;
+  /* Activa Flexbox */
+  justify-content: space-between;
+  /* Distribuye los elementos a los extremos */
+  align-items: center;
+  /* Centra los elementos verticalmente */
 }
 
 .icon-bar {
-  position: fixed; /* Posiciona el contenedor fijo respecto a la ventana */
-  transform: translateY(-50%); /* Ajusta para centrar correctamente */
-  transition: opacity 0.3s ease; /* Transición para la opacidad */
-  opacity: 0; /* Asegúrate de que sea visible */
-  padding: 1% 0 5px 2%; /* Espaciado interno */
+  position: fixed;
+  /* Posiciona el contenedor fijo respecto a la ventana */
+  transform: translateY(-50%);
+  /* Ajusta para centrar correctamente */
+  transition: opacity 0.3s ease;
+  /* Transición para la opacidad */
+  opacity: 0;
+  /* Asegúrate de que sea visible */
+  padding: 1% 0 5px 2%;
+  /* Espaciado interno */
   margin-top: -35px;
-  display: flex; /* Activa Flexbox */
-  justify-content: space-between; /* Distribuye los elementos a los extremos */
-  width: 100%; /* Define un ancho que permita la distribución */
+  display: flex;
+  /* Activa Flexbox */
+  justify-content: space-between;
+  /* Distribuye los elementos a los extremos */
+  width: 100%;
+  /* Define un ancho que permita la distribución */
 }
 
 /* ICONOS PALETTE AND LANGUAGE */
 
-.left-icons{
+.left-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.right-icons{
+.right-icons {
   font-size: 35px;
   margin-right: 1.5%;
 }
 
-.right-icons > a {
+.right-icons>a {
   margin-right: 10px;
   cursor: pointer;
   color: black;
-  transition: color 0.3s; /* Transición suave al pasar el cursor */
-  float: right; /* Coloca los elementos hacia la derecha */
+  transition: color 0.3s;
+  /* Transición suave al pasar el cursor */
+  float: right;
+  /* Coloca los elementos hacia la derecha */
 }
 
 .right-icons a {
-  transition: color 0.3s; /* Transición suave al pasar el cursor */
-  float: right; /* Coloca los elementos hacia la derecha */
+  transition: color 0.3s;
+  /* Transición suave al pasar el cursor */
+  float: right;
+  /* Coloca los elementos hacia la derecha */
 }
 
 
@@ -102,24 +118,25 @@ body {
 
 
 /* RESPONSIVE */
-@media (max-width: 1024px) {
-}
+@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
 
-  .language-icon, .palette-icon{
+  .language-icon,
+  .palette-icon {
     font-size: 40px;
   }
 
-  .right-icons{
+  .right-icons {
     font-size: 25px;
   }
 
-  .right-icons{
+  .right-icons {
     margin-right: 0px !important;
   }
 
-  .language-sidebar, .palette-icon-sidebar {
+  .language-sidebar,
+  .palette-icon-sidebar {
     font-size: 40px;
   }
 
@@ -127,93 +144,102 @@ body {
 
 @media (max-width: 425px) {
 
-  .palette-icon-sidebar{
-    padding-left: 15px;
+  .header{
+    padding-left: 13px;
   }
 
   .icon-bar {
-    position: fixed; /* Posiciona el contenedor fijo respecto a la ventana */
-    transform: translateY(-50%); /* Ajusta para centrar correctamente */
-    transition: opacity 0.3s ease; /* Transición para la opacidad */
-    opacity: 0; /* Asegúrate de que sea visible */
-    margin-top: 2%; /* Resetea márgenes innecesarios */
-    display: flex; /* Activa Flexbox */
-    flex-direction: column; /* Organiza los elementos en columna */
-    justify-content: center; /* Centra los elementos verticalmente */
-    width: 16%; /* Ajusta el ancho al contenido */
-    margin-left: -19px;
+    position: fixed;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 16%;
   }
 
-  .palette-icon-sidebar{
-    padding-left: 19px;
-  }
-
-  .fa-linkedin-sidebar{
-    margin: 45px 0 0 10px !important;
+  .palette-icon-sidebar {
+    margin: 12 0 10 120px !important;
     position: absolute;
+    top: -45px;
+    left: 21.5px;
+  }
+
+  .language-sidebar {
+    position: absolute;
+    top: -14px;
+    left: 21.5px;
+  }
+
+  .fa-github-sidebar {
+    position: absolute;
+    bottom: -38px;
+    left: 27px;
+  }
+
+  .fa-envelope-sidebar {
+    position: absolute;
+    bottom: -70px;
+    left: 27px;
+  }
+
+  .fa-linkedin-sidebar {
+    position: absolute;
+    left: 28px;
+    bottom: -100px !important;
   }
 
 }
 
 @media (max-width: 375px) {
 
-  .language-icon, .palette-icon {
-    font-size: 35px;
-  }
-
-  .language-sidebar, .palette-icon-sidebar {
-    font-size: 35px;
-  }
-
-  .right-icons{
-    font-size: 25px;
-  }
-
+  .language-icon,
   .palette-icon {
-    margin-left: 4px;
+    font-size: 35px;
   }
 
-  .palette-icon-sidebar{
-    padding-left: 13px;
+  .language-sidebar,
+  .palette-icon-sidebar {
+    font-size: 35px;
   }
 
-  .icon-bar {
-    width: 16%; /* Ajusta el ancho al contenido */
-    margin-left: -8px;
-    margin-top: 4%; /* Resetea márgenes innecesarios */
-  }
-
-  .fa-linkedin-sidebar{
-    margin: 40px 0 0 10px !important;
+  .right-icons {
+    font-size: 25px;
   }
 
 }
 
 @media (max-width: 320px) {
 
-  .language-icon, .palette-icon {
+  .language-icon, .palette-icon, .language-sidebar, .palette-icon-sidebar {
     font-size: 30px;
   }
 
-  .language-sidebar, .palette-icon-sidebar {
-    font-size: 30px;
+
+  .palette-icon-sidebar {
+    top: -39px;
   }
 
-  .palette-icon-sidebar{
-    padding-left: 10px;
+  .language-sidebar {
+    top: -14px;
   }
 
-  .right-icons{
-    font-size: 20px;
+  .fa-github-sidebar {
+    bottom: -28px;
+    left: 25px;
   }
 
-  .icon-bar {
-    margin-left: -8px;
-    margin-top: 2%; /* Resetea márgenes innecesarios */
+  .fa-envelope-sidebar {
+    bottom: -54px;
+    left: 25px;
   }
 
-  .fa-linkedin-sidebar{
-    margin: 35px 0 0 10px !important;
+  .fa-linkedin-sidebar {
+    left: 26px;
+    bottom: -80px !important;
   }
+
 
 }
